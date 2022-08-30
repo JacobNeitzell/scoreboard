@@ -34,74 +34,100 @@
 </head>
 
 
-<body class="debug">
+<body class="">
   <Header class="container-fluid">
-    <nav class="navbar navbar-light  p-2 ">
-      <a class="navbar-brand " href="#">
-        Scoreboard
-      </a>
-    </nav>
-
+    <section class="row">
+      <div class="col-12"></div>
+      <nav class="navbar navbar-light  p-2 ">
+        <a class="navbar-brand " href="#">
+          Scoreboard
+        </a>
+      </nav>
+    </section>
   </Header>
 
-  <main class="container-fluid">
+  <main class="container">
 
-    <section>
-      <div class="col-12 d-flex justify-content-center">
-        <div class="card">
-          <div class="card body">
-            <div class="card-title">Main Health</div>
-
-            <div id="healthCount" class="text-center"></div>
-
-
+    <section class="row ">
+      <div class="col-6 d-flex justify-content-center">
+        <div class="card" style="width: 18rem;">
+          <img
+            src="https://e7.pngegg.com/pngimages/966/684/png-clipart-game-character-magician-pixel-art-skeleton-game-fictional-character-thumbnail.png"
+            class="card-img-top" alt="skelly boi">
+          <div class="card-body">
+            <h5 class="mhealth1 text-center">Main Health</h5>
+            <div id="healthCount1" class="text-center fs-4"></div>
           </div>
         </div>
       </div>
-
-
+      <div class="col-6 d-flex justify-content-center">
+        <div class="card" style="width: 18rem;">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLH88UiRVbbdrCDQwJfQaJbLpHa_zTFrNhHQ&usqp=CAU"
+            class="card-img-top img-fluid h-15vh" alt="wizard boi">
+          <div class="card-body">
+            <h5 class="m2health text-center">Main Health</h5>
+            <div id="healthCount2" class="text-center fs-4"></div>
+          </div>
+        </div>
+      </div>
     </section>
 
 
 
 
     <section class="row">
-      <div class="col-md-6">
+      <div class="col-md-6 d-flex justify-content-center align-item-center">
+        <div class="card">
+          <div class="card body">
+            <button class="healthp1" onclick="addHealth1()">Health +1</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 d-flex justify-content-center align-item-center">
+        <div class="card">
+          <div class="card body">
+            <button class="healthp2" onclick="addHealth2()">Health +1</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="row">
+      <div class="col-md-6 d-flex justify-content-center align-item-center">
         <div class="card">
           <div class="card body">
 
-            <button class="healthp1" onclick="addHealth()">Health +1</button>
+            <button class="healthn1" onclick="remHealth1()">Health -1</button>
 
 
           </div>
         </div>
       </div>
-
-      <div class="col-md-6">
+      <div class="col-md-6 d-flex justify-content-center align-item-center">
         <div class="card">
           <div class="card body">
 
-            <button class="healthn1" onclick="remHealth()">Health -1</button>
+            <button class="healthn2" onclick="remHealth2()">Health -1</button>
 
 
           </div>
         </div>
       </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
 
     </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
